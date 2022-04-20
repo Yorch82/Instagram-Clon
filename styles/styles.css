@@ -174,36 +174,27 @@ a, footer {
 }
 
 .screenshot {
-    margin-top: 5px;
-    margin-left: 35px;
-    margin-right: 40px;
+    width: 250px;
+    height: 540px;
+    margin: 25px 110px;
     overflow: hidden;
-    
-}
-
-.screenshot ul {
-    display: flex;
-    animation: cambio 10s infinite alternate linear;
-}
-
-.screenshot li {
-    list-style: none;
-    /* max-width: 100%; */
-        
+    animation: cambio 12s .35s infinite alternate ease-in-out;
 }
 
 @keyframes cambio {
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;}
+    0%{
+        background: url(../assets/screenshot1.png);
+    }
+    35%{
+        background: url(../assets/screenshot2.png);
+    }
 
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-    
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
+    70%{
+        background: url(../assets/screenshot3.png);
+    }
+    100%{
+        background: url(../assets/screenshot4.png);    
+    }    
 }
 
 .lista {

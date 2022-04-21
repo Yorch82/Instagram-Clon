@@ -150,7 +150,6 @@ article {
 }
 
 
-
 .boton_inicio {
     box-sizing: border-box;
     cursor: pointer;
@@ -235,6 +234,13 @@ a, footer {
     position: relative;
 }
 
+.o {
+    font-size: 13px;
+    color: rgba(142, 142, 142, 1);
+    font-weight: 600;
+    margin: 5px 5px;
+}
+
 .btn {
     border: 0;
     color: rgba(0, 55, 107, 1);
@@ -245,8 +251,8 @@ a, footer {
     background: 0 0;
     box-sizing: border-box;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 600;
     text-align: center;
     text-transform: inherit;
     user-select: none;
@@ -278,4 +284,8 @@ a, footer {
     padding: 10px;
     margin-top: 1px;
     margin-bottom: 5px;
+}
+
+.caja p {
+    font-size: 14px;
 }

@@ -32,9 +32,21 @@ body {
     margin-bottom: 12px;
     margin-top: 32px;
     height: 600px;
-    width: 400px;
+    width: 50px;
     background-repeat: no-repeat ;
-   
+    visibility: hidden;
+}
+
+@media (min-width: 768px) {
+    .iphone {
+       visibility: visible;
+       position: relative;
+       width: 400px;       
+    }
+    .navegacion_superior {
+        display: grid;
+        grid-template-columns: 100%;
+    }    
 }
 
 .navegacion_superior-login {
@@ -62,6 +74,7 @@ body {
 .navegacion_inferior {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     font-size: 12px;
     
 }
@@ -69,10 +82,10 @@ body {
 .navegacion_inferior-enlaces {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-content: center;
     flex-wrap: wrap;
-       
+     
 }
 
 .navegacion_inferior-idiomas {
@@ -80,8 +93,9 @@ body {
     justify-content: center;    
     align-items: center;
     padding: 12px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
+    
 }
 .pais div {
     display: flex;
